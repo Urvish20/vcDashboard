@@ -1,12 +1,12 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./pages/login";
 import Otp from "./pages/Otp";
 import SelectAvatar from "./pages/SelectAvatar";
 import DashboardLayout from "./components/DashboardLayout";
 import VideoDetailLayout from "./components/VideoDetailLayout";
 import PrivateRoute from "./components/PrivateRoute";
 import { useSelector } from "react-redux";
+import Login from "./pages/Login";
 
 function App() {
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
